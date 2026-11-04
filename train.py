@@ -39,6 +39,7 @@ test_loader = DataLoader(
     shuffle=False
 )
 
+#构建模型
 class MNISTModel(nn.Module):
     def __init__(self):
         super().__init__()
@@ -56,8 +57,8 @@ class MNISTModel(nn.Module):
 
 model = MNISTModel()
 # print(model)
-images,labels = next(iter(train_loader))
-outputs = model(images)
+#images,labels = next(iter(train_loader))
+#outputs = model(images)
 
 # print("输入形状：",images.shape)
 # print("输出形状：",outputs.shape)
